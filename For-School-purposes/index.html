@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+    <link rel="stylesheet" href="Assets/CSS/mobile.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="site-identity">
+            <a href="#main-div">
+            <img src="Assets/Images/potato.jpg" alt="sitelogo">
+            <h4>About myself</h4>
+            </a>
+        </div>
+        <div class="menucontainer">
+            <ul class="nav-menu">
+                <li><a href="#main-div">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="sibling"><a href="#">Works</a></li>
+                <li class="menubtn"><a href="#">Hire Me</a></li>
+            </ul>
+        </div>
+        <div class="burgermenubtn">
+            <img src="Assets/Images/burger menu.png" alt="" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <div class="menucontainermobile">
+        <img class="closebtn" src="Assets/Images/X button.png" alt="" onclick="toggleMenu()">
+        <ul class="nav-menumobile">
+            <li><a href="#main-div">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="sibling"><a href="#">Works</a></li>
+            <li class="menubtn"><a href="#">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <div id="main-div" class="me">
+        <div class="heroimg"><img src="Assets/Images/photo_6142914049717947411_y.jpg" alt="Mypicture"></div>
+        <div><img class="smllimg" src="Assets/Images/potato.jpg" alt="sitelogo"></div>
+        <div class="heading">
+            <h1>Kenn Araya</h1>
+            <p class="subhead">Discover my Expertise as a Student</p>
+            <div class="heading-button">
+                <button class="hirebtn" style="margin-right: 15px;">Hire Me</button>
+                <p class="number">09947609702 (kennaraya.911@gmail.com)</p>
+                <button>Contact Me</button>
+            </div>
+            <p class="smalltxt">For more info click the links</p>
+        </div>
+    </div>
+
+    <div class="aboutt" id="about">
+        <p class="heading2">About</p>
+        <p class="subhead2">Welcome to my personal website! This is a space where I share my journey, experiences, and passions.</p>
+        <p class="subhead2">Here, you'll get to know more about my background, skills, interests, and the projects I’ve worked on.</p>
+        <p class="subhead2">I just really like potatoes and plants but I'm not a vegan.</p>
+    </div>
+
+    <div class="skills" id="skills">
+        <p class="heading2">Skills</p>
+        <ul class="subhead2">
+            <li>Web Design</li>
+            <li>Programming (HTML, CSS, JavaScript)</li>
+            <li>Graphic Design</li>
+            <li>Communication Skills</li>
+            <li>Critical Thinking</li>
+        </ul>
+    </div>
+
+    
+    <div class="section2">
+        <div class="section2div1">
+            <div style="width: 50%;"></div>
+            <div class="imagecont">
+                <img src="Assets/Images/360_F_126414595_UdCG4jTdrIY1souUYY8vio7FfJOeqC0B.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="education" id="education">
+            <p class="heading2">Education Background</p>
+            <p class="subhead2">Elementary: Rizal Elementary School</p>
+            <p class="subhead2">High School: Benigno Ninoy S. Aquino High School (Vocational Course: Web Design and Programming)</p>
+            <p class="subhead2">Senior High School: Thycovenant Montessori School (HUMSS Strand)</p>
+        </div>
+    
+        <div class="section22">
+            <img src="Assets/Images/canva-green-creative-growing-seed-for-agriculture,-farming,-gardening-logo-bm7B1oarYOE.jpg" alt="" width="50px">
+            <p style="font-size: 20px; font-weight: bold; margin-right: 20px;">Guides</p>
+            <p style="font-size: 20px; font-weight: bold; margin-right: 20px;">Seeds</p>
+            <p style="font-size: 20px; font-weight: bold; margin-right: 20px;">Information</p>
+            <img src="Assets/Images/draw_svg20210707-31126-4q3n0s.svg.png" alt="" width="50px">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menucontainermobile").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
