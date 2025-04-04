@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Interaction</h1>
+    <button onclick="startInteraction()">Click Me</button>
+    <p id="output"></p>
+
+    <script>
+        function startInteraction() {
+            // Show alert
+            alert("Welcome to JavaScript!");
+
+            // Ask for the user's name
+            let name = prompt("What is your name?");
+            if (!name) {
+                name = "Guest"; // Default if no name is entered
+            }
+
+            // Ask if they like JavaScript
+            let likesJavaScript = confirm("Do you like JavaScript?");
+
+            // Update paragraph based on response
+            let message = likesJavaScript 
+                ? `Hello, ${name}! Glad you like JavaScript!` 
+                : `Hello, ${name}! Hope you learn to enjoy it!`;
+
+            document.getElementById("output").innerText = message;
+        }
+    </script>
+
+</body>
+</html>
